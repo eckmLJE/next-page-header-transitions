@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home = () => (
   <div>
@@ -9,10 +10,14 @@ const Home = () => (
     </Head>
 
     <div>
-      <h1>Welcome to Next.js!</h1>
-      <p>
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+    </div>
+    <div>
+      <Link href="/contact">
+        <a>Contact</a>
+      </Link>
     </div>
   </div>
 );
