@@ -8,12 +8,18 @@ class MyApp extends App {
   render() {
     const { Component, pageProps, router } = this.props
     const path = router.pathname
-    const headerType =
-      path === '/' ? 1 : path === '/about' ? 2 : path === '/contact' ? 3 : 1
+    const headerData =
+      path === '/'
+        ? { type: 1, title: 'Home' }
+        : path === '/about'
+        ? { type: 2, title: 'About' }
+        : path === '/contact'
+        ? { type: 3, title: 'Contact' }
+        : { type: 1, title: 'Home' }
     return (
       <>
         <Layout>
-          <Header headerType={headerType} />
+          <Header headerData={headerData} />
           <Component {...pageProps} />
         </Layout>
       </>

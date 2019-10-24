@@ -1,6 +1,6 @@
-import React from "react";
-import Head from "next/head";
-import Link from "next/link";
+import React from 'react'
+import Head from 'next/head'
+import Link from 'next/link'
 
 const Home = () => (
   <div>
@@ -9,17 +9,8 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <div>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
-    <div>
-      <Link href="/contact">
-        <a>Contact</a>
-      </Link>
-    </div>
+    <h2>Welcome to the home page</h2>
   </div>
-);
+)
 
-export default Home;
+export default Home

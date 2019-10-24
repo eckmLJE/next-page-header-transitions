@@ -1,16 +1,3 @@
-import Link from "next/link";
+import Link from 'next/link'
 
-export default () => (
-  <>
-    <div>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-    </div>
-    <div>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </div>
-  </>
-);
+export default () => <h2>Welcome to the contact page</h2>

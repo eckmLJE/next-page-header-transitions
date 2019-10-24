@@ -27,4 +27,10 @@ const Header = styled.header`
   }}
 `
 
-export default ({ headerType }) => <Header type={headerType}>Header</Header>
+const HeaderTitle = styled.h1``
+
+export default ({ headerData }) => (
+  <Header type={headerData.type}>
+    <HeaderTitle>{headerData.title}</HeaderTitle>
+  </Header>
+)
