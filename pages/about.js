@@ -1,5 +1,1 @@
-export default () => (
-  <>
-    <h2>Welcome to the about page</h2>
-  </>
-)
+export default () => <h2>Welcome to the about page</h2>
